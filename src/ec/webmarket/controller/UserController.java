@@ -1,12 +1,13 @@
 package ec.webmarket.controller;
 
 public class UserController {
-	
+
 	private String user;
 	private String password;
 
-	public UserController(){
-		
+	public UserController(String user, String password) {
+		this.user = user;
+		this.password = password;
 	}
 
 	public String getUser() {
