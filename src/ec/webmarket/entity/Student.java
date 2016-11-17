@@ -5,6 +5,10 @@ public class Student {
 	private Integer id;
 	private String nombre;
 
+	public Student() {
+
+	}
+
 	public Integer getId() {
 		return id;
 	}
