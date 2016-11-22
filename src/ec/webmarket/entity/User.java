@@ -1,5 +1,6 @@
 package ec.webmarket.entity;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
@@ -7,9 +8,13 @@ import javax.persistence.Id;
 public class User {
 
 	@Id
+	@Column(unique = true, nullable = false)
 	private Integer id;
 
+	@Column(length = 20, unique = true, nullable = false)
 	private String username;
+
+	@Column(length = 20, unique = true, nullable = false)
 	private String password;
 
 	public Integer getId() {
